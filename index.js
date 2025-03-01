@@ -7,7 +7,7 @@ const fetch = require('node-fetch'); // fetch 추가
 const CHROME_PATH = "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"; // 크롬 실행 경로
 const DEBUG_PORT = 9222;
 const YOUTUBE_MUSIC_URL = "https://music.youtube.com/";
-const OUTPUT_FILE = path.join(__dirname, 'nowplaying.txt');
+const OUTPUT_FILE = path.join(process.cwd(), 'nowplaying.txt');
 
 // 크롬 디버깅 모드로 실행
 exec(`"${CHROME_PATH}" --remote-debugging-port=${DEBUG_PORT} --user-data-dir="C:\\chrome_debug" "${YOUTUBE_MUSIC_URL}"`, (err) => {
