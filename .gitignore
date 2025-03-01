@@ -1,0 +1,12 @@
+# Node 관련
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+
+# 환경 변수 파일
+.env
+
+# 시스템 파일
+.DS_Store
+Thumbs.db
